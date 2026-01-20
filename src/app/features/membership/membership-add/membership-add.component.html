@@ -1,0 +1,11 @@
+<h2>Add Membership</h2>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <input formControlName="userId" placeholder="User ID" />
+      <select formControlName="plan">
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+      </select>
+      <input type="number" formControlName="amount" placeholder="Amount" />
+      <button type="submit">Save</button>
+    </form>
